@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="map-display">
+      <div class="div">
+        <iframe
+          class="iframe"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/place?key=<%= text.apikey %>&q=<%= pemAddress.address %>
+              &zoom=18&maptype=satellite"
+          
+        >
+        </iframe>
+      </div><br>
+      <div class="info-div">
+        <img class="photo" src="<%= photo.imageName %>" alt="" width="400" height="400">
+        <h3>Location: <span style="color: rgb(255, 17, 0);"><%= pemAddress.address %></span></h3>
+      </div>
+      
+    </section>
+      
+    
+  </body>
+</html>

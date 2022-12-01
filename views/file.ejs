@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <div class="upload">
+            <form action="/file" method="POST" enctype="multipart/form-data">
+                Select Image
+                <label for="file-upload">
+                    
+                    <i class="fa-solid fa-image"></i>
+                    <input type="file" name="sampleFile" id="file-upload" >
+                </label>
+                
+                <input type="submit" value="Upload">
+            </form>
+        </div>
+        
+        
+    </main>
+   
+</body>
+</html>
+
+<!-- geocoder.reverse(
+    { lat: latitude, lon: longitude },
+    function (err, response) {
+      // console.log(response)
+      console.log(response[0].formattedAddress);
+
+      const pemAddress = { address: response[0].formattedAddress };
+
+      res.render("index", {
+        text: text,
+        pemAddress: pemAddress,
+      });
+    }
+); -->
+

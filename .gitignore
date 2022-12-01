@@ -1,0 +1,7 @@
+node_modules
+.env
+public/uploads
+server.js
+trial.js
+schema.js
+uploads
