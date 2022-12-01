@@ -1,4 +1,8 @@
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .div{
   position: relative;
   overflow: hidden;
@@ -37,20 +41,27 @@ main{
   flex-direction: column;
   align-items: center;
   position: relative;
+  height: 100vh;
 }
 .geo img{
-  width: 60%;
+  width: 100%;
 }
 .home-text{
+  border: 1px solid rgba(27, 23, 23, 0.4);
+  background-color: rgba(27, 23, 23, 0.4);
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 5;
-  bottom: 0;
+  display: flex;
+  flex-direction: column;
 }
 a{
   padding: 1em;
   font-weight: bold;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: rgb(4, 4, 4);
   border: 1px solid black;
   border-radius: 10px;
   text-decoration: none;
