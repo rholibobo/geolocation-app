@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,400;1,500;1,700;1,800&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 /* :root{
   font-size: 19px;
@@ -117,21 +119,15 @@ header h1{
 .div .info-div{
   position: absolute;
   z-index: 5;
-  width: 25%;
-  height: 70vh;
-  border: 2px solid red;
-  background-color: red;
-  bottom: 0;
-  right: 10px;
+  width: 30%;
+  height: 60vh;
+  bottom: 10px;
+  right: 70px;
 }
-.info-div .street-info{
-  background-color: #3f9896;
-  padding-bottom: 20px;
-  padding-left: 10px;
 
-}
 .info-div .for-image img{
   width: 100%;
+  border-radius: 10px;
 }
 
 
