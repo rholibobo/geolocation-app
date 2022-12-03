@@ -121,17 +121,19 @@ app.post("/file", async (req, res) => {
               geocoder.reverse(
                 { lat: latitude, lon: longitude },
                 function (err, response) {
-                  // console.log(response)
+                  console.log(response)
                   console.log(response[0].formattedAddress);
 
                   const photo = {imageName: `public/uploads/${image}` }
                   console.log(photo)
                   const pemAddress = { address: response[0].formattedAddress };
-
+                  const streetName = { streetName: response[0].streetName};
+                  console.log(streetName)
                   res.render("index", {
                     text: text,
                     pemAddress: pemAddress,
-                    photo: photo
+                    photo: photo,
+                    streetName: streetName
                   });
                 }
               );

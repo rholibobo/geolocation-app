@@ -2,22 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
-.div{
-  position: relative;
-  overflow: hidden;
-  width: 70%;
-  padding-top: 56.25%;
-}
-.iframe{
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
+/* :root{
+  font-size: 19px;
+} */
+
+
 main{
   width: 100%;
 }
@@ -32,67 +23,123 @@ main{
   
 }
 
-/* .upload form{
+/* Home.ejs styling */
+header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2em;
+  background-color: #258d8c;
+}
+header h1{
+  color: white;
   
-} */
+}
 
 .geo{
+  width: 80%;
+  display: flex;
+  margin:0 auto ;
+ 
+}
+
+.geo-div1{
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: relative;
-  height: 100vh;
-}
-.geo img{
-  width: 100%;
-}
-.home-text{
-  border: 1px solid rgba(27, 23, 23, 0.4);
-  background-color: rgba(27, 23, 23, 0.4);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-  display: flex;
-  flex-direction: column;
-}
-a{
-  padding: 1em;
-  font-weight: bold;
-  background-color: white;
-  color: rgb(4, 4, 4);
-  border: 1px solid black;
-  border-radius: 10px;
-  text-decoration: none;
+  justify-content: center;
+  
   
 }
 
-.map-display{
+.geo-div1 h1{
+  font-weight: bold;
+  font-size: 3.5rem;
+  color:#3f9896 ;
+}
+.geo-div1 h3{
+  font-weight: bold;
+  color:#3f9896 ;
+  font-size: 1.2rem;
+}
+.geo-div1 p{
+  width: 70%;
+  font-size: 0.9rem;
+  color: rgb(189, 188, 188);
+  margin-top: 10px;
+}
+.geo-div1 a{
+  width: 40%;
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+  font-size: 0.7rem;
+  background-color:#3f9896;
+  font-weight: bold;
+  margin-top: 20px;
+  border-radius: 15px;
+  transition: all 0.2s linear;
+}
+
+.geo-div1 a:hover{
+  transform: scale(1.1);
+}
+
+.geo-div2{
+  width: 50%;
+}
+.geo .geo-div2 img{
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  /* align-items: center; */
-
-}
-img{
-  border-radius: 20px;
 }
 
-.info-div{
-  /* border: 2px solid black; */
-  border-radius: 20px;
-  box-shadow: 13px 8px 10px 3px rgba(132,127,127,0.73);
+
+
+/* Index.ejs file */
+.div{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
-#file-upload{
-  /* display: none; */
+
+.div .info-div{
+  position: absolute;
+  z-index: 5;
+  width: 25%;
+  height: 70vh;
+  border: 2px solid red;
+  background-color: red;
+  bottom: 0;
+  right: 10px;
 }
- label i{
+.info-div .street-info{
+  background-color: #3f9896;
+  padding-bottom: 20px;
+  padding-left: 10px;
+
+}
+.info-div .for-image img{
+  width: 100%;
+}
+
+
+label i{
   cursor: pointer;
   font-size: 2.2rem;
   
- }
+}
 
 .upload form{
   width: 50%;
