@@ -139,13 +139,17 @@ header h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3f9896;
+  background-color: rgba(101,154,194, 0.4);
   border-radius: 20px;
   
 }
+.upload form h1{
+  color: white;
+}
 label i{
   cursor: pointer;
-  font-size: 2.2rem;
+  font-size: 3.2rem;
+  color: white;
   
 }
 
@@ -164,4 +168,23 @@ form input{
   border-radius: 10px;
   border: none;
   cursor: pointer;
+}
+
+/* Failed.ejs */
+.gif{
+  width: 80%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.for-gif{
+  width:100% ;
+  height: 100vh;
+}
+.for-gif img{
+  width: 100%;
 }

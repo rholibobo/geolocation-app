@@ -142,7 +142,7 @@ app.post("/file", async (req, res) => {
             }
           } catch (error) {
             // Error message if picture does not have gps data
-            res.send("there is no exif gps data for this photo: ")
+            res.render("failed")
           }
 
           // console.log(toLat, toLng)
