@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+// var path = require('path')
 require("dotenv").config();
 const port = process.env.PORT || 4002;
 const fileUpload = require("express-fileupload");
@@ -28,6 +29,7 @@ app.use(express.static("public"));
 app.use("/public/uploads", express.static("./public/uploads"));
 app.use("/public/uploads", express.static("./public/images"));
 app.set("view engine", "ejs");
+// app.set('views', path.join(__dirname, '../views'));
 
 
 // enable files upload
