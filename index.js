@@ -29,7 +29,7 @@ app.use(express.static("public"));
 app.use("/public/uploads", express.static("./public/uploads"));
 app.use("/public/uploads", express.static("./public/images"));
 app.set("view engine", "ejs");
-// app.set('views', path.join(__dirname, '../views'));
+
 
 
 // enable files upload
@@ -51,6 +51,7 @@ app.get("/", (req, res) => {
   res.render("home")
   
 });
+
 app.get("/file", (req, res) => {
   res.render("file")
   
