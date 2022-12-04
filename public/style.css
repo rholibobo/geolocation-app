@@ -188,3 +188,43 @@ form input{
 .for-gif img{
   width: 100%;
 }
+
+
+/* Media Queries */
+@media screen and (max-width:580px) {
+  /* Home.ejs */
+  .geo{
+    flex-direction: column-reverse;
+    width: 95%;
+    padding-bottom: 20px;
+  }
+  .geo-div1,.geo-div2{
+    width: 100%;
+  }
+  .geo-div1 h1{
+    font-size: 3rem;
+  }
+  .geo-div1 a{
+    width: 80%;
+    padding: 1.5em;
+  }
+
+  /* File.ejs */
+  .upload{
+    width: 100%;
+    height: auto;
+  }
+  .upload form{
+    width: 90%;
+    
+  }
+
+
+  /* Index.ejs */
+  .div{
+    height: 100vh;
+  }
+  .div .info-div{
+    bottom: 0;
+  }
+}
