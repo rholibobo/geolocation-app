@@ -46,10 +46,6 @@ app.use(morgan("dev"));
 // Express Verbs
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
-});
-
-app.get("/home", (req, res) => {
   res.render("home")
   
 });
