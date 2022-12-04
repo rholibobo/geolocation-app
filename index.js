@@ -73,17 +73,6 @@ app.post("/file", async (req, res) => {
       let image = avatar.name;
 
 
-      //send response
-      // res.send({
-      //   status: true,
-      //   message: "File is uploaded",
-      //   data: {
-      //     name: avatar.name,
-      //     mimetype: avatar.mimetype,
-      //     size: avatar.size,
-      //   },
-      // });
-
       // ExifImage npm package use
       try {
         new ExifImage({ image: `public/uploads/${image}` }, function (
@@ -94,14 +83,6 @@ app.post("/file", async (req, res) => {
           if (error) console.log("Error: " + error.message);
           else console.log( ); // Do something with your data!
           try {
-            let buffer;
-            // buffer = exifData.exif.ExifVersion;
-            // let bufferCheck = buffer.toString('utf8');
-            // if(bufferCheck !== '0231'){
-            //   buffer = '0231';
-            // }else {
-            //   console.log("bufferCheck is 0231")
-            // }
 
             if (exifData.gps) {
               let toLat = exifData.gps.GPSLatitude.join(" ");
