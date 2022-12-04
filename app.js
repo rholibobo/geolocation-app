@@ -46,9 +46,13 @@ app.use(morgan("dev"));
 // Express Verbs
 
 app.get("/", (req, res) => {
-  res.render("home");
+  res.sendFile(__dirname + "/index.html");
 });
 
+app.get("/home", (req, res) => {
+  res.render("home")
+  
+});
 app.get("/file", (req, res) => {
   res.render("file")
   
