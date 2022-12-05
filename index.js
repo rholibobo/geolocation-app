@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 // var path = require('path')
 require("dotenv").config();
-const port = process.env.PORT || 4002;
+const PORT = process.env.PORT || 4002;
 const fileUpload = require("express-fileupload");
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -148,6 +148,6 @@ app.post("/file", async (req, res) => {
   }
 });
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`listening at ${port}`);
 });
