@@ -57,6 +57,10 @@ app.get("/file", (req, res) => {
   
 });
 
+app.get("/index", (req, res) => {
+  res.render("index")
+})
+
 app.post("/file", async (req, res) => {
  
   try {
@@ -105,13 +109,14 @@ app.post("/file", async (req, res) => {
               geocoder.reverse(
                 { lat: latitude, lon: longitude },
                 function (err, response) {
-                  console.log(response)
-                  console.log(response[0].formattedAddress);
+                  const finalData = response[0]
+                  // console.log(finalData)
+                  console.log(finalData.formattedAddress);
 
                   const photo = {imageName: `public/uploads/${image}` }
                   console.log(photo)
-                  const pemAddress = { address: response[0].formattedAddress };
-                  const streetName = { streetName: response[0].streetName};
+                  const pemAddress = { address: finalData.formattedAddress };
+                  const streetName = { streetName: finalData.streetName};
                   console.log(streetName)
                   res.render("index", {
                     text: text,
