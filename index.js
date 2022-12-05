@@ -109,21 +109,24 @@ app.post("/file", async (req, res) => {
               geocoder.reverse(
                 { lat: latitude, lon: longitude },
                 function (err, response) {
-                  const finalData = response[0]
+                  // const finalData = response[0]
                   // console.log(finalData)
-                  console.log(finalData.formattedAddress);
-
+                  // let final;
+                  
+                  if(Array.isArray(response) && response.length > 0) {
+                    // console.log(response[0])
                   const photo = {imageName: `public/uploads/${image}` }
                   console.log(photo)
-                  const pemAddress = { address: finalData.formattedAddress };
-                  const streetName = { streetName: finalData.streetName};
-                  console.log(streetName)
-                  res.render("index", {
+                    const pemAddress = { address: response[0].formattedAddress };
+                    const streetName = { streetName: response[0].streetName};
+                    console.log(streetName)
+                    res.render("index", {
                     text: text,
                     pemAddress: pemAddress,
                     photo: photo,
                     streetName: streetName
                   });
+                  }
                 }
               );
 
