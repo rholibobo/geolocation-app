@@ -111,6 +111,7 @@ header h1{
   height: 60vh;
   bottom: 10px;
   right: 70px;
+  box-shadow: 2px 5px 28px 22px rgba(239,215,215,0.75);
 }
 
 .info-div .for-image img{
