@@ -226,6 +226,7 @@ form input{
     height: 100vh;
   }
   .div .info-div{
+    width: 50%;
     height: auto;
     bottom: 0;
   }
