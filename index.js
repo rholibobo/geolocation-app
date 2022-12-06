@@ -13,7 +13,7 @@ const Coordinates = require("coordinate-parser");
 const NodeGeocoder = require("node-geocoder");
 var options = {
   provider: "google",
-  httpAdapter: "http", // Default
+  httpAdapter: "https", // Default
   apiKey: process.env.API_KEY, // for Mapquest, OpenCage, Google Premier
   formatter: "json", // 'gpx', 'string', ...
 };

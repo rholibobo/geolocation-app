@@ -140,7 +140,7 @@ header h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(101,154,194, 0.4);
+  box-shadow: 2px 5px 28px 22px rgba(255,255,255,0.75);
   border-radius: 20px;
   
 }
@@ -226,6 +226,10 @@ form input{
     height: 100vh;
   }
   .div .info-div{
+    height: auto;
     bottom: 0;
+  }
+  .div .info-div .for-image{
+    height: auto;
   }
 }
