@@ -108,18 +108,23 @@ header h1{
   position: absolute;
   z-index: 5;
   width: 30%;
-  height: 60vh;
+  height: 50vh;
   bottom: 70px;
   right: 70px;
-  box-shadow: 2px 5px 28px 22px rgba(239,215,215,0.75);
-  border-radius: 10px;
+  /* 
+  border-radius: 10px; */
 }
 .info-div .for-image{
-  border-radius: 10px;
+  width: 100%;
+  position: relative; 
 }
 .info-div .for-image img{
-  width: 100%;
-  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 2px 5px 28px 22px rgba(239,215,215,0.75);
 }
 
 
